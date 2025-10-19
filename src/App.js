@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Navbar from "./Components/Navbar";
+import Intro from "./pages/Intro";
+import Mission from "./pages/Mission";
+import Vision from "./pages/Vision";
+import Products from "./pages/Products";
+import Guarantee from "./pages/Guarantee";
+import Testimonials from "./pages/Testimonials";
+import ContactForm from "./pages/ContactForm";
+import WhatsAppButton from "./Components/WhatsAppButton";
+import Footer from "./Components/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="min-h-screen bg-gray-100">
+      <header>
+        <Navbar />
       </header>
+      <main className="container mx-auto px-4 py-8">
+        <Intro />
+        <Mission />
+        <Vision />
+        <Products />
+        <Guarantee />
+        <Testimonials />
+        <ContactForm />
+        <Footer/>
+      </main>
+
+      <WhatsAppButton />
     </div>
   );
 }
