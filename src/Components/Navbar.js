@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 sticky top-0 z-50 shadow-lg animate-fade-in">
+    <nav className=" flex flex-col items-center bg-white shadow-md border-b py-4 space-y-3 font-Outfit text-[15px] text-[#4A4A4A] transition-all duration-300 p-4 sticky top-0 z-50 shadow-lg animate-fade-in">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
@@ -27,7 +27,7 @@ const Navbar = () => {
           <h1 className="text-3xl font-extrabold tracking-tight">Rahimia Autos</h1>
         </div>
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden md:flex space-x-6 ">
           <li>
             <Link 
               to="/intro" 
@@ -66,7 +66,7 @@ const Navbar = () => {
         </button>
       </div>
       {/* Mobile Menu */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-blue-700 animate-slide-in`}>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} items-center text-sm lg:text-[15px] font-Outfit text-[#4A4A4A] animate-slide-in`}>
         <ul className="flex flex-col items-center py-4">
           <li className="mb-2">
             <Link 

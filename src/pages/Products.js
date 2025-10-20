@@ -93,8 +93,8 @@ const Products = () => {
             loading="lazy"
           />
           <div>
-            <h3 className="text-xl font-semibold">{product.id}. {product.title}</h3>
-            <p>{product.description}</p>
+            <h3 className="text-xl font-Quicksand font-bold">{product.id}. {product.title}</h3>
+            <p className='text-[#4A4A4A] font-normal font-Quicksand text-[13px]'>{product.description}</p>
           </div>
         </article>
       ))}
