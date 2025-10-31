@@ -9,21 +9,23 @@ import Testimonials from "./pages/Testimonials";
 import ContactForm from "./pages/ContactForm";
 import WhatsAppButton from "./Components/WhatsAppButton";
 import Footer from "./Components/Footer";
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-white">
       <header>
         <Navbar />
       </header>
       <main className="container mx-auto px-4 py-8">
         <Intro />
         <Mission />
-        <Vision />
+        
         <Products />
+       
         <Guarantee />
         <Testimonials />
         <ContactForm />
-        <Footer/>
+        <Footer />
       </main>
 
       <WhatsAppButton />

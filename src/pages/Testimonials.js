@@ -38,10 +38,10 @@ const Testimonials = () => {
   const [testimonials, setTestimonials] = useState();
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <section>
+    <section className="mb-8">
       {/* <h3 className="text-2xl font-semibold mb-2"></h3> */}
         <div className="max-w-7xl mx-auto pt-10">
-          <h1 className="text-[32px] font-medium font-Outfit text-[#000000] mb-8">
+          <h1 className="text-4xl font-bold text-center mb-10 text-red-500">
             What Our Clients Say
           </h1>
           <div className="flex flex-col lg:flex-row items-start gap-6">
@@ -53,7 +53,7 @@ const Testimonials = () => {
                   onClick={() => setSelectedIndex(index)}
                   className={`cursor-pointer bg-white w-full md:w-[500px] rounded-lg shadow-md p-4 border-l-2  transform hover:scale-105 transition duration-300 ease-in-out animate-fadeIn flex items-start ${
                     index === selectedIndex
-                      ? "bg-purple-200 border-purple-500"
+                      ? "bg-purple-200 border-red-500"
                       : "bg-white border-gray-300"
                   }`}
                 >

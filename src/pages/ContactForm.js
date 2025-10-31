@@ -16,7 +16,7 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="mb-8">
-      <h3 className="text-2xl font-semibold mb-2">Contact Rahimia Autos</h3>
+      <h3 className="text-4xl font-bold text-center mb-10 text-red-500">Contact Rahimia Autos</h3>
       <h4 className="text-xl mb-4">Have a Question? Get in Touch</h4>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input 

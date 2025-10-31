@@ -15,23 +15,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" flex flex-col items-center bg-white shadow-md border-b py-4 space-y-3 font-Outfit text-[15px] text-[#4A4A4A] transition-all duration-300 p-4 sticky top-0 z-50 shadow-lg animate-fade-in">
+    <nav className=" flex flex-col items-center bg-white shadow-md border-b py-4 space-y-3 space-x-5 font-Outfit text-[15px] text-[#4A4A4A] transition-all duration-300 p-4 sticky top-0 z-50 shadow-lg animate-fade-in">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
             src="./images/rahimia.png" 
             alt="Rahimia Autos Logo" 
-            className="h-12 w-14 mr-4 transform hover:scale-105 transition-transform duration-300" 
+            className="h-12 w-14 mr-4 border rounded-lg transform hover:scale-105 transition-transform duration-300" 
             loading="lazy"
           />
-          <h1 className="text-3xl font-extrabold tracking-tight">Rahimia Autos</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-black">Rahimia Autos</h1>
         </div>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 ">
           <li>
             <Link 
               to="/intro" 
-              className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300 transform hover:scale-110"
+              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
               onClick={(e) => handleLinkClick(e, 'intro')}
             >
               Home
@@ -40,16 +40,34 @@ const Navbar = () => {
           <li>
             <Link 
               to="/products" 
-              className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300 transform hover:scale-110"
+              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
               onClick={(e) => handleLinkClick(e, 'products')}
             >
               Products
             </Link>
           </li>
+           <li>
+            <Link 
+              to="/mission" 
+              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
+              onClick={(e) => handleLinkClick(e, 'mission')}
+            >
+              Mission & Vision
+            </Link>
+          </li>
+           <li>
+            <Link 
+              to="/parts" 
+              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
+              onClick={(e) => handleLinkClick(e, 'parts')}
+            >
+            Body Parts
+            </Link>
+          </li>
           <li>
             <Link 
               to="/contact" 
-              className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300 transform hover:scale-110"
+              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
               onClick={(e) => handleLinkClick(e, 'contact')}
             >
               Contact
@@ -71,7 +89,7 @@ const Navbar = () => {
           <li className="mb-2">
             <Link 
               to="/intro" 
-              className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300"
+              className="text-lg font-medium hover:text-black transition-colors duration-300"
               onClick={(e) => handleLinkClick(e, 'intro')}
             >
               Home
@@ -80,7 +98,7 @@ const Navbar = () => {
           <li className="mb-2">
             <Link 
               to="/products" 
-              className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300"
+              className="text-lg font-medium hover:text-black transition-colors duration-300"
               onClick={(e) => handleLinkClick(e, 'products')}
             >
               Products
@@ -89,7 +107,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/contact" 
-              className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300"
+              className="text-lg font-medium hover:text-black transition-colors duration-300"
               onClick={(e) => handleLinkClick(e, 'contact')}
             >
               Contact

@@ -5,21 +5,21 @@ const products = [
     id: 1,
     title: 'Piston',
     description: 'Engine pistons are vital components within internal combustion engines. They play a crucial role in converting fuel energy into mechanical motion, driving the vehicle forward. These cylindrical structures move up and down within the engine cylinders, creating the necessary compression and expansion phases of the combustion cycle. Constructed from durable materials such as aluminum or steel alloys, pistons endure extreme temperatures and pressures. Their design includes features like piston rings to maintain a proper seal and prevent gas leakage. Modern pistons are often engineered with precision to maximize efficiency, performance, and longevity, reflecting ongoing advancements in automotive technology.',
-    image: 'https://thumbs.dreamstime.com/z/engine-piston-19882078.jpg?ct=jpeg',
+    image: 'https://usmanauto.com/wp-content/uploads/2024/02/12-1.png',
     alt: 'Rahimia Autos Diesel Engine Piston'
   },
   {
     id: 2,
     title: 'Piston Ring',
     description: 'Engine piston rings are essential components that form a vital seal between the piston and the cylinder wall within internal combustion engines. These thin, circular bands are typically made from durable materials such as cast iron, steel, or various alloys. Their primary function is to prevent the leakage of combustion gases from the combustion chamber, ensuring optimal engine performance and efficiency. Piston rings also help regulate oil consumption by scraping excess oil off the cylinder walls. They undergo rigorous engineering to withstand high temperatures, pressures, and frictional forces. Advanced designs may include features like compression rings, oil control rings, and special coatings to enhance performance and durability.',
-    image: 'https://thumbs.dreamstime.com/z/roller-bearings-5398526.jpg?ct=jpeg',
+    image: 'https://usmanauto.com/wp-content/uploads/2024/02/6-1.png',
     alt: 'Rahimia Autos Piston Ring for Diesel Engines'
   },
   {
     id: 3,
     title: 'Cylinder Liner',
     description: 'Engine cylinder liners, also known as cylinder sleeves, are critical components found in many internal combustion engines. These cylindrical structures are inserted into the engine block\'s cylinder bores to provide a smooth and durable surface for the piston to move within. Cylinder liners are typically made from materials such as cast iron, steel, or aluminum alloys, chosen for their high strength and wear resistance. They play a crucial role in maintaining proper piston alignment, reducing friction, and dissipating heat generated during combustion. Advanced liners may feature special coatings or treatments to enhance durability and lubrication properties, ensuring long-lasting engine performance.',
-    image: 'https://thumbs.dreamstime.com/z/piston-sleeve-chinese-truck-diesel-engine-isolated-white-background-set-two-parts-208622668.jpg?ct=jpeg',
+    image: 'https://usmanauto.com/wp-content/uploads/2024/02/11-1.png',
     alt: 'Rahimia Autos Cylinder Liner for Trucks and Tractors'
   },
   {
@@ -83,9 +83,9 @@ const products = [
 const Products = () => {
   return (
     <section id="products" className="mb-8">
-      <h2 className="text-3xl font-bold mb-4">Our Diesel Engine Parts</h2>
+      <h2 className="text-4xl font-bold text-center mb-10 text-red-500">Our Diesel Engine Parts</h2>
       {products.map((product) => (
-        <article key={product.id} className="mb-6 flex flex-col md:flex-row items-start">
+        <article key={product.id} className="mb-6 flex flex-col md:flex-row items-center">
           <img 
             src={product.image} 
             alt={product.alt} 
@@ -93,8 +93,8 @@ const Products = () => {
             loading="lazy"
           />
           <div>
-            <h3 className="text-xl font-Quicksand font-bold">{product.id}. {product.title}</h3>
-            <p className='text-[#4A4A4A] font-normal font-Quicksand text-[13px]'>{product.description}</p>
+            <h3 className="text-4xl font-Quicksand font-bold mb-4">{product.id}. {product.title}</h3>
+            <p className='text-[#4A4A4A] font-normal font-Quicksand text-xl text-justify'>{product.description}</p>
           </div>
         </article>
       ))}
