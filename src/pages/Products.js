@@ -3,80 +3,73 @@ import React from 'react';
 const products = [
   {
     id: 1,
-    title: 'Piston',
-    description: 'Engine pistons are vital components within internal combustion engines. They play a crucial role in converting fuel energy into mechanical motion, driving the vehicle forward. These cylindrical structures move up and down within the engine cylinders, creating the necessary compression and expansion phases of the combustion cycle. Constructed from durable materials such as aluminum or steel alloys, pistons endure extreme temperatures and pressures. Their design includes features like piston rings to maintain a proper seal and prevent gas leakage. Modern pistons are often engineered with precision to maximize efficiency, performance, and longevity, reflecting ongoing advancements in automotive technology.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/12-1.png',
+    title: 'Front Bumper',
+    description: 'A front bumper is a protective and aesthetic bar at the front of a vehicle that absorbs impact in minor collisions, protecting more critical components and the vehicles body from damage',
+    image: 'https://partsdirect.pk/cdn/shop/files/1.12.png?v=1712413749',
     alt: 'Rahimia Autos Diesel Engine Piston'
   },
   {
     id: 2,
-    title: 'Piston Ring',
-    description: 'Engine piston rings are essential components that form a vital seal between the piston and the cylinder wall within internal combustion engines. These thin, circular bands are typically made from durable materials such as cast iron, steel, or various alloys. Their primary function is to prevent the leakage of combustion gases from the combustion chamber, ensuring optimal engine performance and efficiency. Piston rings also help regulate oil consumption by scraping excess oil off the cylinder walls. They undergo rigorous engineering to withstand high temperatures, pressures, and frictional forces. Advanced designs may include features like compression rings, oil control rings, and special coatings to enhance performance and durability.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/6-1.png',
+    title: 'Rear Bumper',
+    description: 'A rear bumper is a protective bar on the back of a vehicle designed to reduce or prevent damage in low-speed collisions and protect components like the trunk, fuel tank, and taillights.',
+    image: 'https://partsdirect.pk/cdn/shop/products/y4mz8FwAPr8jnla6mnGHqG46FMCqOJ00bFNgAx6tzW0apTapVyJ5I0lLCvfFzOWGtFZ0Ddw2O9ui7OV-MCydk0Ms6uyihV706gluiDbOn2z1mmWFQT-ydJ-dDDwXAlPe7fdAnLV_pTMo6KepMgcSMFkGUX_v-LcLHTc_dzsfuxmnbut0JmPCkhL.jpg?v=1694198187',
     alt: 'Rahimia Autos Piston Ring for Diesel Engines'
   },
   {
     id: 3,
-    title: 'Cylinder Liner',
-    description: 'Engine cylinder liners, also known as cylinder sleeves, are critical components found in many internal combustion engines. These cylindrical structures are inserted into the engine block\'s cylinder bores to provide a smooth and durable surface for the piston to move within. Cylinder liners are typically made from materials such as cast iron, steel, or aluminum alloys, chosen for their high strength and wear resistance. They play a crucial role in maintaining proper piston alignment, reducing friction, and dissipating heat generated during combustion. Advanced liners may feature special coatings or treatments to enhance durability and lubrication properties, ensuring long-lasting engine performance.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/11-1.png',
+    title: 'Hood (Bonnet)',
+    description: 'A cars hood (or bonnet) is the hinged cover over the engine compartment that protects its components from the elements, debris, and the public. It also contributes to the vehicles aerodynamics, aesthetics, and noise reduction. ',
+    image: 'https://partsdirect.pk/cdn/shop/products/y4mxLV5VdYw_FVUBXj4bZbMEVJSVAFM_orQg2kZqo4e7M4Az_tzefx5VAcexFLsUFwcsY1e2o92Vc5ptsMo5j-QGl_SNJBMUUl1pGE3WX8tWvyUTsi7mkdzJ_JjFh4oX2BEB7dyudpooh5O5-XEHg18_xh2D2GXPx-5gDTsENbZvyRdfZUJhbqy.jpg?v=1694198281',
     alt: 'Rahimia Autos Cylinder Liner for Trucks and Tractors'
   },
   {
     id: 4,
-    title: 'Engine Valve, Valve Seat and Guide',
-    description: 'Engine valves, along with valve seats and guides, are integral components of an internal combustion engine\'s cylinder head. Valves control the flow of air and fuel into the combustion chamber and the release of exhaust gases out of the chamber during the engine\'s intake, compression, power, and exhaust strokes. Typically made of high-strength alloys such as stainless steel, valves endure extreme temperatures and pressures. Valve seats, often composed of hardened steel or alloy, provide a sealing surface for the valves, ensuring proper compression and preventing gas leakage. Valve guides, usually made from bronze or cast iron, guide the valves\' movement within the cylinder head, minimizing friction and maintaining alignment. Advanced manufacturing techniques and materials enhance the durability, performance, and longevity of these components.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/5-1-480x480.png',
+    title: 'Fenders (Left & Right)',
+    description: 'Fenders are the panels that frame a vehicle\'s wheel wells, protecting the wheels and suspension components from road debris, mud, and water. They also contribute to the vehicle\'s aerodynamics and overall aesthetic appeal. Fenders are typically made from materials like steel, aluminum, or plastic and are designed to withstand minor impacts while maintaining their shape and function.',
+    image: 'https://partsdirect.pk/cdn/shop/products/y4muGtvwRjZf4EqzqoqgrDpTuL-iKq8DnokBoSyOP4yODMl7HYNmxshWX5ZbfYk2Z1egzinZnBmPcrWlfCJ-OWVx41K4vffXxMXKaRnXUMlJ7OhnBsEATszqMHNj_rg9PtiQBELxdPAu78sgzGdXCk1A4A1FCejyuJ48cm5bEYmuIkTZAWb1QY1.jpg?v=1698059588',
     alt: 'Rahimia Autos Engine Valve and Seat'
   },
   {
     id: 5,
-    title: 'Engine Bearings',
-    description: 'Engine bearings are crucial components that support rotating and reciprocating parts within internal combustion engines, ensuring smooth and frictionless operation. These bearings come in various types, including main bearings, connecting rod bearings, and camshaft bearings, each serving specific functions. Typically made from durable materials like steel, bronze, or aluminum alloys, engine bearings withstand high loads, temperatures, and speeds. They create a thin film of lubrication between moving parts, reducing friction and wear. Bearings are meticulously designed for precise fitment and alignment to maintain engine stability and performance. Modern bearings may incorporate advanced technologies such as hydrodynamic lubrication, coatings, and surface treatments to enhance durability and efficiency.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/9-1-480x480.png',
+    title: 'Grille',
+    description: 'A cars front grille is a slotted or mesh panel located at the front of the vehicle, typically between the headlights, that serves two main purposes: cooling and protection. It allows air to flow into the engine compartment to cool the radiator and engine while also acting as a barrier against road debris like rocks and leaves.',
+    image: 'https://partsdirect.pk/cdn/shop/products/y4mE6_QlAExYLd6appPk3P0wDEYYzcJFqIJvoj_8yNiiprhIHk4De-aw20WYeDHHlwhpymvYwbapNZgfJ1OeHxSuS9XrLsV97LLdPfexNlRsOGnwfDM8Cz75p3s29JxnOAbKjBdyEC7SkGgEuS_ffMXpTZ5HA9TiOguXvtOWtvA6i6kek9seRv7_7666788d-1c55-4138-927a-f680fce05d83.jpg?v=1698400602',
     alt: 'Rahimia Autos Engine Bearings for Diesel Engines'
   },
   {
     id: 6,
-    title: 'Engine Gaskets',
-    description: 'Engine gaskets are critical sealing components that prevent fluid and gas leaks between engine components, ensuring optimal performance and efficiency. These thin, flexible materials are typically made from materials like rubber, cork, paper, or metal. They are strategically placed between mating surfaces such as cylinder heads, engine blocks, and exhaust manifolds to create a tight seal. Engine gaskets withstand high temperatures, pressures, and vibrations, maintaining their integrity over time. They come in various shapes and sizes to accommodate different engine configurations and applications. Proper installation and maintenance of gaskets are essential to prevent leaks and ensure the longevity of engine components.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/4-1-480x480.png',
+    title: 'Headlight',
+    description: 'Headlights are lights mounted on the front of a vehicle to illuminate the road ahead, improving safety by helping the driver see at night or in poor visibility. They are considered a critical safety feature, as a significant number of fatal accidents occur in the dark.',
+    image: 'https://partex.com.pk/wp-content/uploads/2023/08/Headlight-Civic.jpg',
     alt: 'Rahimia Autos Engine Gaskets for Trucks and Buses'
   },
   {
     id: 7,
-    title: 'Con Rod and Cam Bush',
-    description: 'Engine connecting rod bushings and camshaft bushings are vital components in internal combustion engines, facilitating smooth and efficient operation. Connecting rod bushings, also known as wrist pin bushings, are located at the small end of the connecting rod and provide a bearing surface for the wrist pin to rotate within. They are typically made of bronze or other durable alloys, offering excellent wear resistance and lubrication properties. Camshaft bushings, on the other hand, support the camshaft within the engine block or cylinder head, ensuring precise camshaft alignment and rotation. These bushings are often made from similar materials and undergo precise machining to maintain tight tolerances and minimize friction. Proper lubrication and maintenance of these bushings are essential for optimal engine performance and longevity.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/1-480x480.jpg',
+    title: 'Taillight',
+    description: 'Tail light are red lamps at the rear of a vehicle that make it visible to others, especially in low-light conditions, and they turn on with the headlights. They also incorporate other functions like brake lights (brighter red) and reverse lights (white), along with turn signals and fog lights, to communicate a drivers actions to those behind them.',
+    image: 'https://thecarguys.pk/cdn/shop/products/4777.jpg?v=1753526955&width=1650',
     alt: 'Rahimia Autos Connecting Rod and Camshaft Bushings'
   },
   {
     id: 8,
-    title: 'Crankshaft and Camshaft',
-    description: 'The engine crankshaft and camshaft are vital components in internal combustion engines, each playing a distinct yet interconnected role in power generation and valve operation. The crankshaft, typically made of high-strength steel, converts reciprocating motion from the pistons into rotational motion, transferring power to the drivetrain. It features precision-machined journals and counterweights to ensure smooth rotation and balance. In contrast, the camshaft, also usually made of steel, controls the opening and closing of engine valves, regulating the intake of air and fuel and the expulsion of exhaust gases. Both components undergo rigorous engineering and precise manufacturing to withstand high loads, temperatures, and speeds, ensuring optimal engine performance and longevity. Lubrication is crucial to reduce friction and wear on bearings supporting the shafts, maintaining smooth operation over the engine\'s lifespan.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/3-480x480.jpg',
+    title: 'Side Mirror',
+    description: 'Side mirrors are exterior mirrors on a vehicles sides that help drivers see areas behind and beside the car, eliminating blind spots for safer driving, lane changes, and parking.',
+    image: 'https://d1iv6qgcmtzm6l.cloudfront.net/products/lg_WLjJ6ihWBBiQnKs9w6VIdjfLgE4I1Nb865sRIrI9.png',
     alt: 'Rahimia Autos Crankshaft and Camshaft for Diesel Engines'
   },
   {
     id: 9,
-    title: 'Nozzle, Plunger, Delivery Valve and Head Rotor',
-    description: 'The engine nozzle, plunger, delivery valve, and head rotor are integral components of diesel fuel injection systems, each playing a crucial role in fuel delivery and combustion. The nozzle atomizes fuel into a fine mist, facilitating efficient combustion and power generation. Plungers regulate fuel quantity injected into cylinders, controlling engine speed and performance. Delivery valves govern the timing and duration of fuel injection, synchronizing with engine cycles for optimal efficiency. The head rotor distributes pressurized fuel to individual injectors, ensuring uniform fuel delivery across all cylinders. Precision engineering and tight tolerances are vital for reliable operation under extreme conditions. Proper maintenance and calibration optimize engine performance and reduce emissions.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/10-1-480x480.png',
+    title: 'Quater Panel',
+    description: 'A quarter panel is an exterior body panel on a vehicles rear sides, located between the rear door and the trunk. It typically wraps around the rear wheel well and is made of materials like steel, aluminum, or plastic. These panels provide structural support, protect the interior from debris and impacts, and contribute to the vehicles appearance',
+    image: 'https://www.fivestarbodies.com/Files/Images/ProductPhotos/QuarterPanels/601-28_QtrPnlfactoryouterskinStreetStockRight.png',
     alt: 'Rahimia Autos Diesel Fuel Injection Components'
   },
   {
     id: 10,
-    title: 'Lubricant',
-    description: 'Engine oil is the lifeblood of internal combustion engines, providing crucial lubrication, cooling, and cleaning functions. It circulates through the engine, forming a protective film between moving parts, reducing friction, and preventing wear. Engine oil also absorbs heat from friction, dissipating it through the oil pan and cooling system. Additionally, it carries away contaminants and debris, keeping the engine clean and prolonging its lifespan. Engine oils come in various formulations, including mineral, synthetic, and semi-synthetic blends, each offering specific performance benefits. Regular oil changes are essential to maintain optimal engine health, ensuring smooth operation, efficiency, and longevity.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/2-480x480.jpg',
+    title: 'Filters',
+    description: 'Car filters are components that trap impurities from oil, air, and fuel, protecting the engine and ensuring clean air inside the cabin.',
+    image: 'https://ix-cdn.b2e5.com/images/27094/27094_d8736b476cef4b9391cb8f01cb25e371_1539205522.jpeg',
     alt: 'Rahimia Autos Premium Engine Lubricants'
-  },
-  {
-    id: 11,
-    title: 'RA Brand',
-    description: 'RA, the hallmark of Rahimia Autos, introduces a premier line of diesel pump parts tailored for tractors and Bedford vehicles. Crafted in collaboration with top manufacturers, each RA product represents a fusion of precision engineering and reliability. Our brand promotion highlights RA\'s dedication to delivering superior performance and longevity in the field. With RA, tractor and Bedford owners experience unparalleled quality, backed by the Rahimia Autos\' legacy of trust. Discover the difference RA diesel pump parts make – optimizing your machinery\'s efficiency and durability, ensuring smooth operations in every task. Elevate your equipment\'s performance with RA, your trusted partner in diesel excellence. Each product is meticulously trialed and tested before being introduced into the market, ensuring utmost reliability and customer satisfaction.',
-    image: 'https://usmanauto.com/wp-content/uploads/2024/02/UA-Brand-480x480.jpg',
-    alt: 'RA Brand Diesel Pump Parts by Rahimia Autos'
   },
 ];
 
