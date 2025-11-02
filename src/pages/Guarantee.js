@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 // Move this to a separate file later (e.g., data/cars.js)
 const cars = [
@@ -89,11 +89,13 @@ const Guarantee = () => {
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        
           {cars.map((car) => (
             <div
               key={car.id}
               className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col"
             >
+                <Link to='/body'>
               {/* Car Image */}
               <div className="h-61 bg-gray-500">
                 <img
@@ -105,25 +107,19 @@ const Guarantee = () => {
                   }}
                 />
               </div>
-
+  </Link>
               {/* Car Name */}
               <div className="p-6 flex-1">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   {car.name}
                 </h2>
 
-                {/* Parts List */}
-                {/* <ul className="space-y-3 text-sm text-gray-600">
-                  {car.parts.map((part, index) => (
-                    <li key={index} className="border-b border-gray-200 pb-2 last:border-0">
-                      <span className="font-medium text-gray-900">{part.name}:</span>{' '}
-                      <span className="text-gray-600">{part.description}</span>
-                    </li>
-                  ))}
-                </ul> */}
+               
               </div>
+            
             </div>
           ))}
+
         </div>
       </div>
     </section>

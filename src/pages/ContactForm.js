@@ -25,7 +25,7 @@ const ContactForm = () => {
           placeholder="Your Name" 
           value={formData.name} 
           onChange={handleChange} 
-          className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 transition-all duration-300" 
+          className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-white transition-all duration-300" 
           required 
           aria-label="Your Name"
         />
@@ -35,7 +35,7 @@ const ContactForm = () => {
           placeholder="Your Email" 
           value={formData.email} 
           onChange={handleChange} 
-          className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 transition-all duration-300" 
+          className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-white transition-all duration-300" 
           required 
           aria-label="Your Email"
         />
@@ -44,13 +44,13 @@ const ContactForm = () => {
           placeholder="Your Message" 
           value={formData.message} 
           onChange={handleChange} 
-          className="w-full p-2 border border-gray-300 rounded h-32 focus:ring-2 focus:ring-blue-500 transition-all duration-300" 
+          className="w-full p-2 border border-gray-300 rounded h-32 focus:ring-2 focus:ring-white transition-all duration-300" 
           required 
           aria-label="Your Message"
         />
         <button 
           type="submit" 
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
         >
           Submit
         </button>
