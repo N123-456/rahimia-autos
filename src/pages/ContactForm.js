@@ -17,8 +17,8 @@ const ContactForm = () => {
   return (
     <section id="contact" className="mb-8">
       <h3 className="text-4xl font-bold text-center mb-10 text-red-500">Contact Rahimia Autos</h3>
-      <h4 className="text-xl mb-4">Have a Question? Get in Touch</h4>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      {/* <h4 className="text-xl mb-4">Have a Question? Get in Touch</h4> */}
+      <form onSubmit={handleSubmit} className="space-y-4 px-16">
         <input 
           type="text" 
           name="name" 
@@ -50,7 +50,7 @@ const ContactForm = () => {
         />
         <button 
           type="submit" 
-          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+          className="bg-red-500 text-white px-4 py-2 rounded  transform hover:scale-105 transition-all duration-300"
         >
           Submit
         </button>

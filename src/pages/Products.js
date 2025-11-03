@@ -76,9 +76,9 @@ const products = [
 const Products = () => {
   return (
     <section id="products" className="mb-8">
-      <h2 className="text-4xl font-bold text-center mb-10 text-red-500">Our Diesel Engine Parts</h2>
+      <h2 className="text-4xl font-bold text-center mb-6 text-red-500">Our Diesel Engine Parts</h2>
       {products.map((product) => (
-        <article key={product.id} className="mb-6 flex flex-col md:flex-row items-center">
+        <article key={product.id} className="mb-6 flex flex-col md:flex-row items-center px-16">
           <img 
             src={product.image} 
             alt={product.alt} 

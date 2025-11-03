@@ -4,116 +4,92 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen((v) => !v);
 
   const handleLinkClick = (e, targetId) => {
     e.preventDefault();
     document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false); // Close menu on link click (mobile)
+    setIsOpen(false);
   };
 
   return (
-    <nav className=" flex flex-col items-center bg-white shadow-md border-b py-4 space-y-3 space-x-5 font-Outfit text-[15px] text-[#4A4A4A] transition-all duration-300 p-4 sticky top-0 z-50 shadow-lg animate-fade-in">
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center">
-          <img 
-            src="./images/rahimia.png" 
-            alt="Rahimia Autos Logo" 
-            className="h-12 w-14 mr-4 border rounded-lg transform hover:scale-105 transition-transform duration-300" 
-            loading="lazy"
-          />
-          <h1 className="text-3xl font-extrabold tracking-tight text-black">Rahimia Autos</h1>
+    <nav className="sticky top-0 z-50 bg-white shadow-md border-b font-Outfit">
+      {/* ---------- Container ---------- */}
+      <div className="max-w-7xl mx-auto px-4 py-3">
+
+        {/* ---------- Header Row (Logo + Desktop Menu + Hamburger) ---------- */}
+        <div className="flex items-center justify-between">
+
+          {/* Logo + Title */}
+          <div className="flex items-center space-x-3">
+            <img
+              src="./images/rahimia.png"
+              alt="Rahimia Autos Logo"
+              className="h-13 w-16 rounded-lg  transition-transform hover:scale-105"
+              loading="lazy"
+            />
+            <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-black">
+              Rahimia Autos
+            </h1>
+          </div>
+
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex items-center space-x-8 text-[18px] text-[#4A4A4A]">
+            {[
+              { to: '/',     label: 'Home',          id: 'intro' },
+              { to: '/products',  label: 'Products',      id: 'products' },
+              { to: '/mission',   label: 'Mission & Vision', id: 'mission' },
+              { to: '/parts',     label: 'Body Parts',    id: 'parts' },
+              { to: '/contact',   label: 'Contact',       id: 'contact' },
+            ].map(({ to, label, id }) => (
+              <li key={to}>
+                <Link
+                  to={to}
+                  className="font-medium hover:text-black transition-colors duration-300 hover:scale-110 inline-block"
+                  onClick={(e) => handleLinkClick(e, id)}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Hamburger */}
+          <button
+            className="md:hidden text-2xl focus:outline-none"
+            onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
+          >
+            {isOpen ? '✖' : '☰'}
+          </button>
         </div>
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 ">
-          <li>
-            <Link 
-              to="/intro" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
-              onClick={(e) => handleLinkClick(e, 'intro')}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/products" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
-              onClick={(e) => handleLinkClick(e, 'products')}
-            >
-              Products
-            </Link>
-          </li>
-           <li>
-            <Link 
-              to="/mission" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
-              onClick={(e) => handleLinkClick(e, 'mission')}
-            >
-              Mission & Vision
-            </Link>
-          </li>
-           <li>
-            <Link 
-              to="/parts" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
-              onClick={(e) => handleLinkClick(e, 'parts')}
-            >
-            Body Parts
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/contact" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300 transform hover:scale-110"
-              onClick={(e) => handleLinkClick(e, 'contact')}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-        {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-2xl focus:outline-none" 
-          onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
+
+        {/* ---------- Mobile Menu (slides in) ---------- */}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ${
+            isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
         >
-          {isOpen ? '✖' : '☰'}
-        </button>
-      </div>
-      {/* Mobile Menu */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} items-center text-sm lg:text-[15px] font-Outfit text-[#4A4A4A] animate-slide-in`}>
-        <ul className="flex flex-col items-center py-4">
-          <li className="mb-2">
-            <Link 
-              to="/intro" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300"
-              onClick={(e) => handleLinkClick(e, 'intro')}
-            >
-              Home
-            </Link>
-          </li>
-          <li className="mb-2">
-            <Link 
-              to="/products" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300"
-              onClick={(e) => handleLinkClick(e, 'products')}
-            >
-              Products
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/contact" 
-              className="text-lg font-medium hover:text-black transition-colors duration-300"
-              onClick={(e) => handleLinkClick(e, 'contact')}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+          <ul className="flex flex-col items-center space-y-4 py-4 text-[15px] text-[#4A4A4A]">
+            {[
+              { to: '/intro',     label: 'Home',          id: 'intro' },
+              { to: '/products',  label: 'Products',      id: 'products' },
+              { to: '/mission',   label: 'Mission & Vision', id: 'mission' },
+              { to: '/parts',     label: 'Body Parts',    id: 'parts' },
+              { to: '/contact',   label: 'Contact',       id: 'contact' },
+            ].map(({ to, label, id }) => (
+              <li key={to}>
+                <Link
+                  to={to}
+                  className="font-medium hover:text-black transition-colors duration-300"
+                  onClick={(e) => handleLinkClick(e, id)}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </nav>
   );

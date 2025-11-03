@@ -9,7 +9,7 @@ const Intro = () => {
                 <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
 
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://media.licdn.com/dms/image/v2/C5612AQE06J6-iIsMpA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520079598275?e=1762387200&v=beta&t=_mmRKxzbILNfrmqU9062d0dUyJHykr4LIQ-2TKt-Q9s" alt="..." />
+                        <img  src="images/bumpers.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
 
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
@@ -17,7 +17,7 @@ const Intro = () => {
                     </div>
 
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://as2.ftcdn.net/v2/jpg/06/24/93/01/1000_F_624930106_z6S3cmRD97dySqqjtvNBFTPQx6tPf2XE.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                        <img src="images/headlight.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
 
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
