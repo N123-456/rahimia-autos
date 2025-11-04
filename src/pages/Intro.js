@@ -25,7 +25,7 @@ const Intro = () => {
 
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src="/images/headlight.png"
+              src="/images/headlight.jpg"
               className="w-full h-full object-cover absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               alt="Headlight"
             />
