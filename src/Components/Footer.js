@@ -1,63 +1,50 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
-      
-
-<footer class="bg-black dark:bg-gray-900">
-    <div class="max-w-7xl w-full mx-auto">
-      <div class="grid grid-cols-2 gap-12 px-4 py-6 lg:py-8 md:grid-cols-4 items-center space-x-8">
-        <div>
-            <h2 class="mb-6 text-xl font-semibold text-white uppercase dark:text-white">Our Address</h2>
-            <ul class="text-white dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <p class=" hover:underline">I-10/4 Rahimia Autos,
-</p></li><li className='mb-4'>
- <p class=" hover:underline">
-Islamabad, Pakistan</p>
-                </li>
-               
+    <footer className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-4 py-10">
+        
+        {/* Grid layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center md:text-left">
+          
+          {/* Address */}
+          <div>
+            <h2 className="mb-4 text-lg font-semibold uppercase">Our Address</h2>
+            <ul className="space-y-2">
+              <li>I-10/4 Rahimia Autos</li>
+              <li>Islamabad, Pakistan</li>
             </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-xl font-semibold text-white uppercase dark:text-white">Opening Hours</h2>
-            <ul class="text-white dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <p class="hover:underline">Monday - Thursday
-09:45 AM - 10:30 PM</p>
-                </li>
-                <li class="mb-4">
-                    <p class="hover:underline">Saturday - Sunday
-09:45 AM - 10:30 PM</p>
-                </li>
-                
-            </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-xl font-semibold text-white uppercase dark:text-white">Contact Us</h2>
-            <ul class="text-white dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Privacy Policy</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Licensing</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                </li>
-            </ul>
-        </div>
-       
-    </div>
-     <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 All Rights Reserved.
-        </span>
-      
-    </div>
-</footer>
+          </div>
 
-    </div>
-  )
-}
+          {/* Opening Hours */}
+          <div>
+            <h2 className="mb-4 text-lg font-semibold uppercase">Opening Hours</h2>
+            <ul className="space-y-2">
+              <li>Mon - Thu: 09:45 AM - 10:30 PM</li>
+              <li>Sat - Sun: 09:45 AM - 10:30 PM</li>
+            </ul>
+          </div>
 
-export default Footer
+          {/* Contact / Links */}
+          <div>
+            <h2 className="mb-4 text-lg font-semibold uppercase">Contact Us</h2>
+            <ul className="space-y-2">
+              <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="#" className="hover:underline">Licensing</a></li>
+              <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* Divider line */}
+        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+          © 2025 Rahimia Autos. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
