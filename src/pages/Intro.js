@@ -3,7 +3,7 @@ import "flowbite";
 
 const Intro = () => {
   return (
-    <section className="mb-3">
+    <section className="mb-3 pt-24">
       <div id="default-carousel" className="relative w-full" data-carousel="slide">
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
 

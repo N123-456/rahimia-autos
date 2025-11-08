@@ -14,24 +14,22 @@ const Testimonials = () => {
   const Testimonials = [
     {
       id: "1",
-      name: "John Carter",
-      title: "Founder & CEO at Innovexa",
+      name: "Safi Ullah Khan",
       feedback:
-        "Rahimia Autos has become my trusted partner in keeping my fleet of vehicles running smoothly. Their consistent quality, attention to detail, and commitment to customer satisfaction have made them an invaluable resource for my business. I can't recommend them enough!",
+        "An excellent place to buy Auto parts. The staff is knowledgeable and helped me find the exact parts I needed for my car. Highly recommend Rahimia Autos for their great service and quality products.",
     },
     {
       id: "2",
-      name: "Mice Anders",
-      title: "Chief Technology Officer at NexaCore",
+      name: "Naveed ul Hassan",
+    
       feedback:
-        "Their technical expertise is outstanding. From UI/UX to backend architecture, everything was executed flawlessly. Our project was delivered on time and with exceptional quality.",
+        "The proprietor is very friendly and honest in nature. It was a good experience dealing with Rahimia Autos. They provided me with the exact spare part I needed at a competitive price, and the entire process was seamless from start to finish. Their dedication to customer satisfaction is truly commendable.",
     },
     {
       id: "3",
-      name: "Jennifer Lee",
-      title: "Product Manager at BrightApps",
+      name: "Saad Mir",
       feedback:
-        "Absolutely loved working with them! They transformed our ideas into a functional, beautiful application. Their team was flexible, skilled, and incredibly easy to collaborate with.",
+        "Rahimia Autos is my go-to place for all my car spare parts needs. Their wide selection and knowledgeable staff make it easy to find what I need. I've always had a positive experience here and will continue to be a loyal customer.",
     },
   ];
 
@@ -53,7 +51,7 @@ const Testimonials = () => {
                   onClick={() => setSelectedIndex(index)}
                   className={`cursor-pointer bg-white w-full md:w-[500px] rounded-lg shadow-md p-4 border-l-2  transform hover:scale-105 transition duration-300 ease-in-out animate-fadeIn flex items-start ${
                     index === selectedIndex
-                      ? "bg-gray-200 border-red-500"
+                      ? "bg-gray-200 border-gray-500"
                       : "bg-white border-gray-300"
                   }`}
                 >
@@ -66,9 +64,9 @@ const Testimonials = () => {
                         <h3 className="text-[17px] font-medium font-Outfit text-[#000000]">
                           {t.name}
                         </h3>
-                        <p className="text-[15px] font-medium font-Outfit text-[#4A4A4A]">
+                        {/* <p className="text-[15px] font-medium font-Outfit text-[#4A4A4A]">
                           {t.title}
-                        </p>
+                        </p> */}
                       </div>
                       {/* <button
                 onClick={() => handleDelete(index)}
@@ -85,7 +83,7 @@ const Testimonials = () => {
 
             {/* Testimonial Paragraph */}
             <div className="lg:min-h-[370px] sm:min-h-[200px] md:min-h-[200px] relative pl-[100px] pt-[84px] p-5 rounded-[10px] bg-[#f7efff]">
-              <p className="relative before:content-['“'] before:absolute before:left-0 before:top-0 before:translate-x-[-90px] before:translate-y-[-150px] before:text-[15rem] before:font-serif before:text-[#9550ff] w-full lg:text-[20px] sm:text-[18px] md:text-[18px]">
+              <p className="relative before:content-['“'] before:absolute before:left-0 before:top-0 before:translate-x-[-90px] before:translate-y-[-150px] before:text-[15rem] before:font-serif before:text-gray-400 w-full lg:text-[20px] sm:text-[18px] md:text-[18px]">
                 {Testimonials[selectedIndex]?.feedback}
               </p>
             </div>

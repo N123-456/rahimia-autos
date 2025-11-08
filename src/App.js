@@ -25,7 +25,7 @@ function App() {
         <Guarantee />
         {/* <Vision/> */}
         <Testimonials />
-        <ContactForm />
+        {/* <ContactForm /> */}
         <Footer />
       </main>
 

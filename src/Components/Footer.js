@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaMapMarkerAlt, FaClock, FaPhoneAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -10,29 +11,34 @@ const Footer = () => {
           
           {/* Address */}
           <div>
-            <h2 className="mb-4 text-lg font-semibold uppercase">Our Address</h2>
-            <ul className="space-y-2">
-              <li>I-10/4 Rahimia Autos</li>
-              <li>Islamabad, Pakistan</li>
+            <h2 className="mb-4 flex items-center justify-center md:justify-start text-lg font-semibold uppercase">
+              <FaMapMarkerAlt className="text-red-500 mr-2" /> Our Address
+            </h2>
+            <ul className="space-y-2 text-gray-300">
+              <li className="hover:text-white">I-10/4 Rahimia Autos</li>
+              <li className="hover:text-white">Islamabad, Pakistan</li>
             </ul>
           </div>
 
           {/* Opening Hours */}
           <div>
-            <h2 className="mb-4 text-lg font-semibold uppercase">Opening Hours</h2>
-            <ul className="space-y-2">
-              <li>Mon - Thu: 09:45 AM - 10:30 PM</li>
-              <li>Sat - Sun: 09:45 AM - 10:30 PM</li>
+            <h2 className="mb-4 flex items-center justify-center md:justify-start text-lg font-semibold uppercase">
+              <FaClock className="text-yellow-400 mr-2" /> Opening Hours
+            </h2>
+            <ul className="space-y-2 text-gray-300">
+              <li className="hover:text-white">Mon - Thu: 09:45 AM - 10:30 PM</li>
+              <li className="hover:text-white">Sat - Sun: 09:45 AM - 10:30 PM</li>
             </ul>
           </div>
 
-          {/* Contact / Links */}
+          {/* Contact */}
           <div>
-            <h2 className="mb-4 text-lg font-semibold uppercase">Contact Us</h2>
-            <ul className="space-y-2">
-              <li><a  className="hover:underline">03316233334</a></li>
-              <li><a className="hover:underline">03136233334</a></li>
-              <li><a className="hover:underline">03215566160</a></li>
+            <h2 className="mb-4 flex items-center justify-center md:justify-start text-lg font-semibold uppercase">
+              <FaPhoneAlt className="text-green-400 mr-2" /> Contact Us
+            </h2>
+            <ul className="space-y-2 text-gray-300">
+              <li><a href="tel:03316233334" className="hover:text-white">0331 6233334</a></li>
+              <li><a href="tel:03215566160" className="hover:text-white">0321 5566160</a></li>
             </ul>
           </div>
 

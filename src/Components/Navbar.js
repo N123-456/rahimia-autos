@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md border-b font-Outfit">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md border-b font-Outfit">
       {/* ---------- Container ---------- */}
       <div className="max-w-7xl mx-auto px-4 py-3">
 
