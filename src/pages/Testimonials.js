@@ -33,7 +33,7 @@ const Testimonials = () => {
     },
   ];
 
-  const [testimonials, setTestimonials] = useState();
+ 
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <section className="mb-8">

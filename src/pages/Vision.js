@@ -1,7 +1,7 @@
 // src/components/PartsGrid.jsx
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+
 
 // src/components/PartsGrid.jsx
 import React, { useState, useEffect } from "react";
